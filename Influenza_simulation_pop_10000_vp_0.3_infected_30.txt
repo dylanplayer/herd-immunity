@@ -1,0 +1,13 @@
+2021-12-01 17:53:54.654205
+Population size: 10000 | Virus: Influenza | Mortality rate: 0.2 | Reproduction rate: 0.17
+
+Step 1
+	New Interactions: 3000 | New Infections: 15 | New Deaths: 5 | Total Vaccinated: 3010 | Total Unvaccinated: 6628
+Step 2
+	New Interactions: 1500 | New Infections: 7 | New Deaths: 2 | Total Vaccinated: 3016 | Total Unvaccinated: 6453
+Step 3
+	New Interactions: 700 | New Infections: 3 | New Deaths: 1 | Total Vaccinated: 3019 | Total Unvaccinated: 6354
+Step 4
+	New Interactions: 300 | New Infections: 1 | New Deaths: 0 | Total Vaccinated: 3021 | Total Unvaccinated: 6311
+Step 5
+	New Interactions: 100 | New Infections: 0 | New Deaths: 0 | Total Vaccinated: 3022 | Total Unvaccinated: 6297
