@@ -50,14 +50,11 @@ class Simulation:
 
     def interact(self, infected_person, uninfected_person):
         self.interactions += 1
-        if not uninfected_person.is_vaccinated:
+        if uninfected_person not in self.vaccinated_population:
             if self.virus.reproduction_rate >= random.random():
                 uninfected_person.infect()
                 self.newly_infected.append(uninfected_person)
-                for person in self.vulnerable_population:
-                    if person.id == uninfected_person.id:
-                        self.vulnerable_population.remove(uninfected_person)
-                        break                        
+                self.vulnerable_population.remove(uninfected_person)                       
 
     def check_infection_survival(self):
         for person in self.infected_population:
@@ -67,6 +64,8 @@ class Simulation:
             else:
                 self.vaccinated_population.append(person)
             self.infected_population.remove(person)
+        self.infected_population.clear()
+        # print(len(self.infected_population))
 
     def step(self):
         self.current_step += 1
@@ -77,15 +76,20 @@ class Simulation:
         for person in self.infected_population:
             for i in range(100):
                 self.interact(person, random.choice(uninfected_population))
+                uninfected_population = self.vaccinated_population + self.vulnerable_population
         self.check_infection_survival()
-        self.infected_population + self.newly_infected.copy()
+        self.infected_population = self.newly_infected
         
     def run(self):
         self.current_step = 0
         while self.simulation_is_not_over():
             self.step()
-            self.logger.log_time_step(self.current_step, self.interactions, len(self.infected_population), self.new_deaths, len(self.vaccinated_population), len(self.vulnerable_population))
+            self.logger.log_time_step(self.current_step, self.interactions, len(self.infected_population), self.new_deaths, len(self.vaccinated_population), len(self.vulnerable_population), len(self.dead_population))
             # print(f'{self.current_step}. |' ,f'Interactions: {self.interactions},',f'Vulnerable: {len(self.vulnerable_population)},', f'Vaccinated: {len(self.vaccinated_population)},', f'New Infections: {len(self.infected_population)},', f'Dead: {len(self.dead_population)}')
+        self.interactions = 0
+        self.check_infection_survival()
+        self.logger.log_time_step(self.current_step, self.interactions, len(self.infected_population), self.new_deaths, len(self.vaccinated_population), len(self.vulnerable_population), len(self.dead_population))
+            
 
 if __name__ == "__main__":
     params = sys.argv[1:]

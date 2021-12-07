@@ -1,0 +1,33 @@
+2021-12-06 19:38:47.549415
+Population size: 10000 | Virus: Ebola | Mortality rate: 0.7 | Reproduction rate: 0.25
+
+Step 1
+	New Interactions: 100 | New Infections: 2 | New Deaths: 0 | Total Vaccinated: 9001 | Total Unvaccinated: 997 | Total Dead: 0
+Step 2
+	New Interactions: 200 | New Infections: 4 | New Deaths: 1 | Total Vaccinated: 9001 | Total Unvaccinated: 993 | Total Dead: 1
+Step 3
+	New Interactions: 400 | New Infections: 11 | New Deaths: 1 | Total Vaccinated: 9002 | Total Unvaccinated: 982 | Total Dead: 2
+Step 4
+	New Interactions: 1100 | New Infections: 23 | New Deaths: 5 | Total Vaccinated: 9003 | Total Unvaccinated: 959 | Total Dead: 7
+Step 5
+	New Interactions: 2300 | New Infections: 54 | New Deaths: 9 | Total Vaccinated: 9006 | Total Unvaccinated: 905 | Total Dead: 16
+Step 6
+	New Interactions: 5400 | New Infections: 112 | New Deaths: 16 | Total Vaccinated: 9017 | Total Unvaccinated: 793 | Total Dead: 32
+Step 7
+	New Interactions: 11200 | New Infections: 205 | New Deaths: 35 | Total Vaccinated: 9038 | Total Unvaccinated: 588 | Total Dead: 67
+Step 8
+	New Interactions: 20500 | New Infections: 244 | New Deaths: 69 | Total Vaccinated: 9072 | Total Unvaccinated: 344 | Total Dead: 136
+Step 9
+	New Interactions: 24400 | New Infections: 177 | New Deaths: 89 | Total Vaccinated: 9105 | Total Unvaccinated: 167 | Total Dead: 225
+Step 10
+	New Interactions: 17700 | New Infections: 62 | New Deaths: 66 | Total Vaccinated: 9128 | Total Unvaccinated: 105 | Total Dead: 291
+Step 11
+	New Interactions: 6200 | New Infections: 12 | New Deaths: 27 | Total Vaccinated: 9132 | Total Unvaccinated: 93 | Total Dead: 318
+Step 12
+	New Interactions: 1200 | New Infections: 3 | New Deaths: 4 | Total Vaccinated: 9134 | Total Unvaccinated: 90 | Total Dead: 322
+Step 13
+	New Interactions: 300 | New Infections: 1 | New Deaths: 2 | Total Vaccinated: 9134 | Total Unvaccinated: 89 | Total Dead: 324
+Step 14
+	New Interactions: 100 | New Infections: 0 | New Deaths: 0 | Total Vaccinated: 9135 | Total Unvaccinated: 89 | Total Dead: 324
+Step 14
+	New Interactions: 0 | New Infections: 0 | New Deaths: 0 | Total Vaccinated: 9135 | Total Unvaccinated: 89 | Total Dead: 324

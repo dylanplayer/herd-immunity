@@ -12,8 +12,8 @@ class Logger:
         f.write(metadata)
         f.close()
 
-    def log_time_step(self, time_step_number, interactions, new_infections, deaths, vaccinations, unvaccinated):
-        data = f'\nStep {time_step_number}\n\tNew Interactions: {interactions} | New Infections: {new_infections} | New Deaths: {deaths} | Total Vaccinated: {vaccinations} | Total Unvaccinated: {unvaccinated}'
+    def log_time_step(self, time_step_number, interactions, new_infections, deaths, vaccinations, unvaccinated, total_dead):
+        data = f'\nStep {time_step_number}\n\tNew Interactions: {interactions} | New Infections: {new_infections} | New Deaths: {deaths} | Total Vaccinated: {vaccinations} | Total Unvaccinated: {unvaccinated} | Total Dead: {total_dead}'
         f = open(self.file_name, 'a')
         f.write(data)
         f.close()
