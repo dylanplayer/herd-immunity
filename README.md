@@ -1,4 +1,4 @@
-# herd-immunity
+# Herd Immunity
 Herd immunity is a program that is intended to simulate how viruses spread
 ## Usage
 - Population Size: 10,000
